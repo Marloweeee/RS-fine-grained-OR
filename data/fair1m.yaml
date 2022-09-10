@@ -1,0 +1,30 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: ../datasets/coco  # dataset root dir
+path: C:\FAIR1M
+train: train.txt  # train images (relative to 'path') 118287 images
+val: val.txt  # train images (relative to 'path') 5000 images
+#test: test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+nc: 37  # number of classes
+names: ['Boeing737','Boeing747','Boeing777','Boeing787','C919','A220','A321','A330', 'A350','ARJ21','other-airplane',
+        'Passenger Ship','Motorboat','Fishing Boat','Tugboat', 'Engineering Ship','Liquid Cargo Ship', 'Dry Cargo Ship','Warship','other-ship',
+        'Small Car','Bus','Cargo Truck', 'Dump Truck','Van', 'Trailer','Tractor','Excavator','Truck Tractor','other-vehicle',
+        'Basketball Court','Tennis Court','Football Field','Baseball Field','Intersection','Roundabout','Bridge'
+        ] # class names
+#names: ['波音737','波音747','波音777','波音787','C919','空客A220','空客A321','空客A330', '空客A350','ARJ21','其它飞机',
+#        '邮轮','摩托艇','渔船','拖船', '工程船','液货船', '干货船','军舰','其它飞机',
+#        '小汽车','公交车','货车', '垃圾车','Van', '厢式货车','飞机牵引车','挖掘机','货车牵引车','其他车辆',
+#        '篮球场','网球场','足球场','棒球场','交叉路口','环岛','桥梁'
+#        ] # class names
+
+

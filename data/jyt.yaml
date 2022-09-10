@@ -1,0 +1,15 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: ../datasets/coco128  # dataset root dir
+path: D:\BaiduNetdiskDownload\ship
+train: train.txt  # train images (relative to 'path') 128 images
+val: val.txt  # val images (relative to 'path') 128 images
+test:  test.txt # test images (optional)
+
+# Classes
+nc: 44  # number of classes 多层分类？
+names: ['Perry','Atago','Arleigh Burke','Ticonderoga','YuTing','Hatsuyuki','Hyuga','YuDeng','Asagiri','Test ship',
+        'Training ship','frigate','YuDao','destroyer','WhidbeyIsland','AOE','YuZhao','Spearhead','Commander','Masyuu',
+         'Austen','Osumi','Tarawa','Wasp','Lute','Sanantonio','YuKan','LCS-2','Blue Ridge','Jinggangshan','HuangHe',
+          'Medical ship','ContainerB','Hovercraft','Container A','Car carrier','Oil Tanker','Yacht','Cruise','Enterprise',
+           'Nimitz','Aircraft carrier','Submarine','Dock']  # class names
+
